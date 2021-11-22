@@ -2,9 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { ThemeProvider, createTheme } from "@mui/material";
 import { MessageList } from "./components";
-import "./index.module.css";
 
-const theme = createTheme({});
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#1E90FF",
+    },
+  },
+});
 
 ReactDOM.render(
   <React.StrictMode>
