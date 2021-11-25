@@ -93,7 +93,7 @@ export const MessageList = () => {
         onKeyPress={handlePressInput}
         endAdornment={
           <InputAdornment position="end">
-            <Send className={styles.icon} onClick={sendMessage} />
+            <Send className={styles.icon} onClick={() => sendMessage()} />
           </InputAdornment>
         }
       />
