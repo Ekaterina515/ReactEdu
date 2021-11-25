@@ -1,0 +1,41 @@
+.body {
+  background: gray;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.chats {
+  overflow-y: auto;
+  width: 20%;
+  background-color: #efefef;
+  border-right: 1px solid #efefef;
+}
+
+.messages {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  background-color: #fff;
+}
+
+.messages > div:nth-child(1) {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 15px 10px;
+}
+
+.messages > div:nth-child(2) {
+  height: 50px;
+  flex: none;
+  background-color: #efefef;
+}

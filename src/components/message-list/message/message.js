@@ -1,16 +1,16 @@
-// import classnames from "classnames";
+import classNames from "classnames";
+import styles from "./message.module.css";
 
-// const className = classnames("class1", "class2", {
-//   botMessage: message.author === "Bot"
-// });
-
-export const Message = ({ message }) => {
+export function Message({ message }) {
   return (
-    <div>
-      <div>{message.author}</div>
-      <div>{message.message}</div>
-      <div>11:00</div>
-      <hr />
+    <div
+      className={classNames(styles.message, {
+        [styles.currentMessage]: message.author === "User",
+      })}
+    >
+      <h3>{message.message}</h3>
+      <p>{message.author}</p>
+      <p>10:00</p>
     </div>
   );
-};
+}
