@@ -56,7 +56,7 @@ export const MessageList = () => {
 
     if (roomMessages.length && lastMessages.author !== "Bot") {
       timerId = setTimeout(() => {
-        sendMessage("Bot", "Hello from bot");
+        sendMessage("Bot", "Welcome to our chat!");
       }, 200);
     }
 
@@ -87,7 +87,7 @@ export const MessageList = () => {
         fullWidth
         className={styles.input}
         ref={ref}
-        placeholder="enter message..."
+        placeholder="Enter Message..."
         value={value}
         onChange={(e) => setValue(e.target.value)}
         onKeyPress={handlePressInput}

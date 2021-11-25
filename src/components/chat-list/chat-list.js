@@ -5,7 +5,7 @@ import { Chat } from "./chat";
 
 export const ChatList = () => {
   const { roomId } = useParams();
-  const [chats] = useState(["room1", "room2", "room3"]);
+  const [chats] = useState(["Chat #1", "Chat #2", "Chat #3"]);
 
   return (
     <List component="nav">

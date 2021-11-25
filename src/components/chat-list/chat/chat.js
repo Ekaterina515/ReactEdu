@@ -7,10 +7,10 @@ const useStyles = makeStyles(() => {
   return {
     item: {
       "&.Mui-selected": {
-        backgroundColor: "#2b5278",
+        backgroundColor: "#0088cc",
       },
       "&.Mui-selected:hover": {
-        backgroundColor: "#2b5278",
+        backgroundColor: "#0088cc",
       },
     },
   };
@@ -31,7 +31,7 @@ export function Chat({ title, selected, handleListItemClick }) {
       </ListItemIcon>
       <div className={styles.description}>
         <ListItemText className={styles.text} primary={title} />
-        <ListItemText className={styles.text} primary="12.30" />
+        <ListItemText className={styles.text} primary="10.00" />
       </div>
     </ListItem>
   );
